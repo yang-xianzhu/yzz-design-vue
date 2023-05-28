@@ -11,8 +11,19 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /guide/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/yang-xianzhu/yzz-design-vue
+
+features:
+  - icon: ⚡️
+    title: Fast!
+    details: Lorem ipsum...
+  - icon: 🖖
+    title: Mini
+    details: Lorem ipsum...
+  - icon: 🛠️
+    title: VitePress
+    details: Lorem ipsum...
 ---

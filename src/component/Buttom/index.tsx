@@ -16,7 +16,7 @@ export default defineComponent({
         const { slots } = context
 
         return () => <button
-            class={`py-[2px] px-[8px] cursor-pointer rounded-[6px] text-${type === 'default' ? 'font-yzz-black' : 'font-yzz-white'} shadow-md bg-${type} hover:bg-${type}-500 active:bg-primary-700`}
+            class={`py-[2px] px-[8px] cursor-pointer rounded-[4px] text-${type === 'default' ? 'font-yzz-black' : 'font-yzz-white'} shadow-md bg-${type} hover:bg-${type}-500 active:bg-primary-700`}
         >
             <i class={'line-md:loading-twotone-loop'}></i> <span>{slots.default && slots.default()}</span>
         </button >;
