@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #1677ff;
+  --primary-color-500: #4096ff;
+  --primary-color-700: #0958d9;
+
+  --font-color-white: #fff;
+  --font-color-black: #333;
+
+  --default-color: #eee;
+}
