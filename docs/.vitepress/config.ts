@@ -23,9 +23,10 @@ const socialLinks = [
 ];
 
 const config = {
-  title: "🚀 Yzz Design",
+  title: "Yzz Design",
   description: "个人组件库",
   themeConfig: {
+    logo: "./logo.png",
     socialLinks,
     sidebar,
     nav,
