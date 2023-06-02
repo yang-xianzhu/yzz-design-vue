@@ -1,6 +1,6 @@
 {
   "name": "yzz-design-vite",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@iconify-json/ic": "1.1.4",
+    "@iconify-json/icon-park-outline": "^1.1.11",
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
     "unocss": "0.52.3",
     "vite": "3.0.7",
-    "vitepress": "1.0.0-alpha.8"
+    "vitepress": "1.0.0-alpha.8",
+    "vitepress-theme-demoblock": "1.4.2"
   },
   "dependencies": {
     "@unocss/reset": "^0.52.4",

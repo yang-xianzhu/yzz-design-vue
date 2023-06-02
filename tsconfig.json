@@ -7,8 +7,9 @@
         "paths": {
           "@/*": ["src/*"],
           "components/*": ["src/components/*"],
-          "utils/*": ["src/utils/*"]
-        }
+          "utils/*": ["src/utils/*"],
+        },
+        // "lib": ["ES2015"]
     },
     "include": [
         "./**/*.*",
@@ -17,7 +18,6 @@
     "exclude": [
         "node_modules"
     ],
-    
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": "true",
 }

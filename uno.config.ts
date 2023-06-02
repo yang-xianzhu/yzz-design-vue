@@ -11,6 +11,8 @@ export const theme = {
   colors: {
     primary: "var(--primary-color)",
     danger: "var(--danger-color)",
+    success: "var(--success-color)",
+    warning: "var(--warning-color)",
 
     "font-yzz-white": "var(--font-color-white)",
     "font-yzz-black": "var(--font-color-black)",
@@ -25,18 +27,19 @@ export const theme = {
 // 自定义联合属性
 const shortcuts: any = {
   flexCenter: "flex items-center justify-center",
+  flexCenterX: "flex justify-center",
+  flexCenterY: "flex items-center",
 };
 
 const safelist = [
   // 背景色
-  "bg-primary",
-  "bg-danger",
+  ...["primary", "danger", "success", "warning"].map((v) => `bg-${v}`),
+
   // 字体颜色
   "text-font-yzz-white",
   "text-font-yzz-black",
   // 边框颜色
-  "border-primary",
-  "border-danger",
+  ...["primary", "danger", "success", "warning"].map((v) => `border-${v}`),
 ];
 
 export const presets: Preset[] = [

@@ -1,7 +1,7 @@
 const sidebar = [
   {
     text: "开发指南",
-    items: [{ text: "快速开始", link: "/guide/" }],
+    items: [{ text: "介绍", link: "/guide/" }],
     collapsed: false,
   },
   {
@@ -35,13 +35,14 @@ const config = {
       copyright: "Copyright © 2023-present Yzz",
     },
   },
-
   markdown: {
-    // config: (md) => {
-    //   // 添加DemoBlock插槽
-    //   const { demoBlockPlugin } = require("vitepress-theme-demoblock");
-    //   md.use(demoBlockPlugin);
-    // },
+    anchor: { permalink: false },
+    toc: { includeLevel: [1, 2] },
+    config: (md) => {
+      // 添加DemoBlock插槽
+      // const { demoBlockPlugin } = require("vitepress-theme-demoblock");
+      // md.use(demoBlockPlugin);
+    },
   },
 };
 export default config;

@@ -1,13 +1,14 @@
 import { defineConfig } from "vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-// import unoconfig from "../uno.config";
-// import UnoCss from "unocss";
+import unoConfig from "../uno.config";
+import UnoCSS from "unocss/vite";
+
 // https://vitejs.dev/config/
 
 export default defineConfig({
   plugins: [
     // 添加JSX插件
     vueJsx(),
-    // UnoCss(unoconfig),
+    UnoCSS(unoConfig),
   ],
 });
