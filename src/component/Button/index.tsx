@@ -132,7 +132,7 @@ export default defineComponent({
                 {/* 是否loading */}
                 {loading.value && <i class={`i-icon-park-outline-loading-four yzz-rotate text-[14px] mr-[6px]`}></i>}
                 {icon.value && <i class={btnIcons.value}></i>}
-                <span class={`text-[12px]`}>{slots.default && slots.default()}</span>
+                <span class={`text-[12px] select-none`}>{slots.default && slots.default()}</span>
             </button >
         </div >
     },

@@ -6,8 +6,8 @@ import DialogView from "@/view/Dialog.vue";
 
 <template>
   <div class="p-12">
-    <!-- <ButtonView />
-    <SwitchView /> -->
+    <!-- <ButtonView /> -->
+    <!-- <SwitchView /> -->
     <DialogView />
   </div>
 </template>

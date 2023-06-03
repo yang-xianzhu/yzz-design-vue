@@ -24,6 +24,9 @@ export const theme = {
     "font-yzz-primary": "var(--primary-color)",
     "font-yzz-danger": "var(--danger-color)",
 
+    "btn-close-bg": "var(--btn-close-bg)",
+    "btn-close-color": "var(--btn-close-color)",
+
     "yzz-btn-color": "var(--shadow-btn-color)",
     default: "var(--default-color)",
   },

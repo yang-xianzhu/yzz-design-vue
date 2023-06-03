@@ -38,10 +38,17 @@ export const handlerRipple = {
 // 禁止页面滚动
 export const handleScroll = {
   name: "handleScroll",
-  mounted() {
+  mounted(_, binding) {
+    const { value } = binding;
+    if (!value) return;
     document.body.style.overflow = "hidden";
   },
   beforeUnmount() {
     document.body.style.overflow = "auto";
+  },
+  beforeUpdate(_, binding: DirectiveBinding) {
+    const { value } = binding;
+    if (!!value) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
   },
 };

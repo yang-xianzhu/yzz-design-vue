@@ -27,7 +27,7 @@ function change(val) {
 }
 
 watchEffect(() => {
-  console.log("父组件", val2.value);
+  // console.log("父组件", val2.value);
 });
 </script>
 <template>
