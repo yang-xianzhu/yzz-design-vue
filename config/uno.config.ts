@@ -6,6 +6,7 @@ import {
   Preset,
   Rule,
 } from "unocss";
+import Unocss from "unocss/vite";
 
 export const theme = {
   colors: {
@@ -13,6 +14,10 @@ export const theme = {
     danger: "var(--danger-color)",
     success: "var(--success-color)",
     warning: "var(--warning-color)",
+
+    "switch-off": "var(--switch-off-color)",
+
+    "dialog-color": "var(--dialog-color)",
 
     "font-yzz-white": "var(--font-color-white)",
     "font-yzz-black": "var(--font-color-black)",
@@ -29,11 +34,12 @@ const shortcuts: any = {
   flexCenter: "flex items-center justify-center",
   flexCenterX: "flex justify-center",
   flexCenterY: "flex items-center",
+  positionCenter: "absolute left-50% top-50% translate--50%",
 };
 
 const safelist = [
   // 背景色
-  ...["primary", "danger", "success", "warning"].map((v) => `bg-${v}`),
+  ...["x", "danger", "success", "warning"].map((v) => `bg-${v}`),
 
   // 字体颜色
   "text-font-yzz-white",
@@ -62,11 +68,12 @@ const rules: Rule[] = [
   ],
 ];
 
-export default defineConfig({
-  exclude: ["node_modules"],
-  presets,
-  rules,
-  theme,
-  shortcuts,
-  safelist,
-}) as any;
+export default () =>
+  Unocss({
+    exclude: ["node_modules"],
+    presets,
+    rules,
+    theme,
+    shortcuts,
+    safelist,
+  }) as any;

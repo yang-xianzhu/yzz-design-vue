@@ -3,15 +3,15 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 // 让vue中支持jsx、tsx语法的plugin
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import UnoCssConfig from "./uno.config";
+import UnoCssConfig from "./config/uno.config";
 import UnoCSS from "unocss/vite";
 
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx({}),
+    vueJsx(),
     // 添加UnoCSS插件,
-    UnoCSS(UnoCssConfig),
+    UnoCssConfig(),
   ],
   resolve: {
     alias: {

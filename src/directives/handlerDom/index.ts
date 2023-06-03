@@ -1,7 +1,7 @@
-import { DirectiveBinding, VNode, nextTick } from "vue";
+import { DirectiveBinding, VNode } from "vue";
+
 // 自定义指令：v-ripple
 // 附加dom一些涟漪效果
-
 export const handlerRipple = {
   name: "handlerRipple",
   mounted(
@@ -33,5 +33,15 @@ export const handlerRipple = {
     //   el.classList.remove("btn-active");
     // });
   },
-  //   beforeUnmount(el, binding, vnode, prevVnode) {},
+};
+
+// 禁止页面滚动
+export const handleScroll = {
+  name: "handleScroll",
+  mounted() {
+    document.body.style.overflow = "hidden";
+  },
+  beforeUnmount() {
+    document.body.style.overflow = "auto";
+  },
 };

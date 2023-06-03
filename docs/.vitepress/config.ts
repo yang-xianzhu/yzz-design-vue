@@ -6,7 +6,10 @@ const sidebar = [
   },
   {
     text: "通用",
-    items: [{ text: "Button 按钮", link: "/components/Button" }],
+    items: [
+      { text: "Button 按钮", link: "/components/Button" },
+      { text: "Switch 开关", link: "/components/Switch" },
+    ],
   },
   // { text: "导航" },
   // { text: "反馈" },

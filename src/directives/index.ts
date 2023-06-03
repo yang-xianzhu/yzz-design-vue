@@ -1,7 +1,7 @@
 import { App } from "vue";
-import { handlerRipple } from "./handlerDom";
+import { handlerRipple, handleScroll } from "./handlerDom";
 
-const list = [handlerRipple];
+const list = [handlerRipple, handleScroll];
 
 // 注册指令
 export const initDirectives = (app: App) => {
