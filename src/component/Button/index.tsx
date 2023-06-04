@@ -54,7 +54,7 @@ export default defineComponent({
         const { slots, emit } = context
 
         const btnClassNames = computed(() => {
-            return `${block.value ? 'w-full' : ''} focus-opacity-60 flexCenter relative z-1 shadow-yzz-btn-color box-border border hover-ease-in duration-300 ${disabled.value ? 'yzz-isDisabled' : ' hover:opacity-60'}`
+            return `${block.value ? 'w-full' : ''} focus-opacity-60 flexCenter relative z-1 shadow-yzz-btn-color box-border border hover-ease-in duration-200 ${disabled.value ? 'yzz-isDisabled' : ' hover:opacity-60'}`
         })
 
         // 计算btn的类型
@@ -122,7 +122,7 @@ export default defineComponent({
             emit('click', e)
         }
 
-        return () => <div class={`relative box-border ease-in duration-300 ${block.value ? '' : 'inline-block'} ${className.value}`}>
+        return () => <div class={`relative box-border ease-in duration-200 ${block.value ? '' : 'inline-block'} ${className.value}`}>
             <button
                 v-handlerRipple
                 class={`${btnClassNames.value} ${btnSizeClassNames.value} ${btnTypeClassNames.value} ${btnShapeClassNames.value} ${btnLoading.value}`}

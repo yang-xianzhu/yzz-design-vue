@@ -1,5 +1,4 @@
 import {
-  defineConfig,
   presetIcons,
   presetUno,
   presetAttributify,
@@ -29,6 +28,7 @@ export const theme = {
 
     "yzz-btn-color": "var(--shadow-btn-color)",
     default: "var(--default-color)",
+    "grey-color": "var(--grey-color)",
   },
 };
 
@@ -42,7 +42,9 @@ const shortcuts: any = {
 
 const safelist = [
   // 背景色
-  ...["x", "danger", "success", "warning"].map((v) => `bg-${v}`),
+  ...["primary", "danger", "success", "warning", "grey-color"].map(
+    (v) => `bg-${v}`
+  ),
 
   // 字体颜色
   "text-font-yzz-white",
