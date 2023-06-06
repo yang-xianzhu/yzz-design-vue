@@ -1,29 +1,6 @@
-const sidebar = [
-  {
-    text: "开发指南",
-    items: [{ text: "介绍", link: "/guide/" }],
-    collapsed: false,
-  },
-  {
-    text: "通用",
-    items: [
-      { text: "Button 按钮", link: "/components/Button" },
-      { text: "Switch 开关", link: "/components/Switch" },
-    ],
-  },
-  // { text: "导航" },
-  // { text: "反馈" },
-  // { text: "数据录入" },
-  // { text: "数据展示" },
-  // { text: "布局" },
-];
-
-// 顶部导航配置
-const nav = [{ text: "组件", link: "/guide/" }];
-
-const socialLinks = [
-  { icon: "github", link: "https://github.com/yang-xianzhu/yzz-design-vue" },
-];
+import { nav } from "../config/nav";
+import { sidebar } from "../config/sidebar";
+import { socialLinks } from "../config/socialLinks";
 
 const config = {
   title: "Yzz Design",
@@ -43,8 +20,6 @@ const config = {
     toc: { includeLevel: [1, 2] },
     config: (md) => {
       // 添加DemoBlock插槽
-      // const { demoBlockPlugin } = require("vitepress-theme-demoblock");
-      // md.use(demoBlockPlugin);
     },
   },
 };

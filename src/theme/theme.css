@@ -3,7 +3,6 @@
   --success-color: #67c23a;
   --warning-color: #e6a23c;
   --danger-color: #ff4d4f;
-  --default-color: #fff;
 
   --switch-off-color: #dcdfe6;
 
@@ -17,7 +16,7 @@
   --btn-close-bg: rgba(0, 0, 0, 0.06);
   --btn-close-color: rgba(0, 0, 0, 0.88);
 
-  --default-color: #eee;
+  --default-color: #dcdfe6;
 
   --grey-color: #f0f2f5;
 }

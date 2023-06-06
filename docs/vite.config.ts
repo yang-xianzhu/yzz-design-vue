@@ -10,4 +10,10 @@ export default defineConfig({
     vueJsx(),
     unoConfig(),
   ],
+  resolve: {
+    alias: {
+      "@": "../src",
+      "@/components": "../src/component",
+    },
+  },
 });

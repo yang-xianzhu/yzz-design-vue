@@ -42,15 +42,46 @@ const shortcuts: any = {
 
 const safelist = [
   // 背景色
-  ...["primary", "danger", "success", "warning", "grey-color"].map(
-    (v) => `bg-${v}`
-  ),
+  ...[
+    "primary",
+    "danger",
+    "success",
+    "warning",
+    "grey-color",
+    "switch-off",
+    "dialog-color",
+    "font-yzz-white",
+    "font-yzz-black",
+    "font-yzz-primary",
+    "font-yzz-danger",
+    "btn-close-bg",
+    "btn-close-color",
+    "yzz-btn-color",
+    "grey-color",
+  ].map((v) => `bg-${v}`),
 
   // 字体颜色
   "text-font-yzz-white",
   "text-font-yzz-black",
   // 边框颜色
-  ...["primary", "danger", "success", "warning"].map((v) => `border-${v}`),
+  ...[
+    "primary",
+    "danger",
+    "success",
+    "warning",
+    "default",
+    "grey-color",
+    "switch-off",
+    "dialog-color",
+    "font-yzz-white",
+    "font-yzz-black",
+    "font-yzz-primary",
+    "font-yzz-danger",
+    "btn-close-bg",
+    "btn-close-color",
+    "yzz-btn-color",
+    "grey-color",
+  ].map((v) => `border-${v}`),
 ];
 
 export const presets: Preset[] = [

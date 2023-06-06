@@ -1,8 +1,15 @@
 # Switch 开关
 
-开关选择器。
+表示两种相互对立的状态间的切换，多用于触发「开/关」。
 
-<div class='text-amber'>h</div>
-<!-- <yzz-switch v-model=></yzz-switch> -->
+## 基础用法
 
-<!-- <YzzButton type="primary">主要按钮</YzzButton> -->
+绑定 v-model 到一个 Boolean 类型的变量。
+
+<script setup>
+import { ref }from 'vue'
+
+const val = ref(true)
+</script>
+
+<yzz-switch v-model='val'/>

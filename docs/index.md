@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: Yzz-Design-Vue
+  name: Yzz Design Vue
   text: UI组件库
   tagline: 持续更新...
   image:
     src: /logo.png
-    alt: VitePress
+    alt: Yzz Design
   actions:
     - theme: brand
-      text: Get Started
+      text: 开始使用
       link: /guide/
     - theme: alt
-      text: View on GitHub
+      text: 前往GitHub
       link: https://github.com/yang-xianzhu/yzz-design-vue
 
 features:
