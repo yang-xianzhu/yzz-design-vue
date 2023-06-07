@@ -25,9 +25,7 @@ function handleLoading() {
 
 </script>
 
-## 基础
-
-### 普通
+## 普通
 
 <div class='mt-[12px]'>
 <yzz-button type="primary" >主要按钮</yzz-button>
@@ -37,7 +35,7 @@ function handleLoading() {
 <yzz-button type="danger" className="ml-[8px]" disabled>禁用按钮</yzz-button>
 </div>
 
-### 胶囊形状
+## 胶囊形状
 
 <div class='mt-[12px]'>
     <yzz-button type="primary" shape="round">主要按钮</yzz-button>
@@ -47,7 +45,7 @@ function handleLoading() {
     <yzz-button type="danger" shape="round" className="ml-[8px]" disabled>禁用按钮</yzz-button>
 </div>
 
-### 圆角
+## 圆角
 
 <div class='mt-[12px]'>
     <yzz-button type="primary" shape="circle" icon="add"></yzz-button>
@@ -57,13 +55,13 @@ function handleLoading() {
     <yzz-button type="danger" shape="circle" icon="star" className="ml-[8px]" ></yzz-button>
 </div>
 
-### 跟随父级宽度
+## 跟随父级宽度
 
 <div class='mt-[12px]'>
  <yzz-button type="primary" block>跟随父级宽度按钮</yzz-button>
 </div>
 
-### 按钮尺寸
+## 按钮尺寸
 
 <div class='mt-[12px]'>
     <div class="mb-[12px]">
@@ -75,7 +73,7 @@ function handleLoading() {
     <yzz-button type="danger" :size="list[currentIdx]" className="ml-[8px]" disabled>禁用按钮</yzz-button>
 </div>
 
-### 加载状态
+## 加载状态
 
 <div class='mt-[12px]'>
     <div class="mb-[12px]">
@@ -84,7 +82,7 @@ function handleLoading() {
     <yzz-button :loading="loading">{{ loading ? "加载中" : "完成" }}</yzz-button>
 </div>
 
-### icon 图标
+## icon 图标
 
 <div class='mt-[12px]'>
     <yzz-button icon="add"></yzz-button>

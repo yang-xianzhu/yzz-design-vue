@@ -10,10 +10,10 @@ const config = {
     socialLinks,
     sidebar,
     nav,
-    footer: {
-      message: "MIT.",
-      copyright: "Copyright © 2023-present Yzz",
-    },
+    // footer: {
+    //   message: "MIT.",
+    //   copyright: "Copyright © 2023-present Yzz",
+    // },
   },
   markdown: {
     anchor: { permalink: false },

@@ -17,13 +17,13 @@ hero:
       link: https://github.com/yang-xianzhu/yzz-design-vue
 
 features:
-  - icon: ⚡️
-    title: Fast!
+  - icon:
+    title: 轻量
     details: Lorem ipsum...
-  - icon: 🖖
-    title: Mini
+  - icon:
+    title: 原子化css
     details: Lorem ipsum...
-  - icon: 🛠️
-    title: VitePress
+  - icon:
+    title: Vite
     details: Lorem ipsum...
 ---
