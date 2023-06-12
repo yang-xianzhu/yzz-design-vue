@@ -5,6 +5,15 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import UnoCssConfig from "./config/uno.config";
 
+const rollupOptions = {
+  external: ["vue"],
+  output: {
+    globals: {
+      vue: "Vue",
+    },
+  },
+};
+
 export default defineConfig({
   plugins: [
     vue({
@@ -16,7 +25,20 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": "/src",
+      "@": "/packages/yzz-design",
+    },
+  },
+  build: {
+    rollupOptions,
+    minify: "terser", // boolean | 'terser' | 'esbuild'
+    sourcemap: true, // 输出单独 source文件
+    reportCompressedSize: true, // 生成压缩大小报告
+    cssCodeSplit: true,
+    lib: {
+      entry: "./packages/yzz-design/entry.ts",
+      name: "YzzDesign",
+      fileName: "yzz-design",
+      formats: ["es", "umd", "iife"], // 导出模块类型
     },
   },
 });

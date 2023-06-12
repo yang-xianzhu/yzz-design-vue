@@ -4,7 +4,7 @@ import "../../../src/theme/theme.css";
 import "../../../src/style/animation.css";
 import "./style/var.css";
 import "virtual:uno.css";
-import YzzDesignUi from "../../../src/entry";
+import YzzDesignUi from "../../../yzz-design/entry";
 import { useData } from "vitepress";
 import { h } from "vue";
 import AsideBottom from "./components/AsideBottom.vue";

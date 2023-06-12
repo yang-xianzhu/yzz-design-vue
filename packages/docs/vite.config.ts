@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import unoConfig from "../config/uno.config";
+import unoConfig from "../../config/uno.config";
 
 // https://vitejs.dev/config/
 
@@ -10,10 +10,4 @@ export default defineConfig({
     vueJsx(),
     unoConfig(),
   ],
-  resolve: {
-    alias: {
-      "@": "../src",
-      "@/components": "../src/component",
-    },
-  },
 });

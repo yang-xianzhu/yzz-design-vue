@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-          "@/*": ["src/*"]
+          "@/*": ["packages/yzz-design/*"]
         },
         "declaration": true, /* 生成相关的 '.d.ts' 文件。 */
         "declarationDir": "./dist/types", /* '.d.ts' 文件输出目录 */
@@ -10,8 +10,8 @@
         "lib": ["ES2015.Promise","ESNext","DOM"]
     },
     "include": [
-        "./src/**/*.*",
-        "./src/shims-vue.d.ts",
+        "packages/yzz-design/**/*.*",
+        "packages/yzz-design/shims-vue.d.ts",
     ],
     "exclude": [
         "node_modules"

@@ -48,7 +48,7 @@ export const handleScroll = {
   },
   beforeUpdate(_: HTMLButtonElement, binding: DirectiveBinding) {
     const { value } = binding;
-    if (!!value) document.body.style.overflow = "hidden";
+    if (value) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
   },
 };
